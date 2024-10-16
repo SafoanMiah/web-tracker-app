@@ -3,7 +3,7 @@
 
 A simple and interactive web application to track progress using Streamlit, allowing users to add names, metrics, and visualize the progress with a leaderboard and charts. Perfect for keeping track of individual or team achievements.
 
-(Streamlit Web Example)[https://web-tracker.streamlit.app/]
+[Streamlit Web Example](https://web-tracker.streamlit.app/)
 
 ## 🚀 Features
 
