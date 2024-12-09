@@ -21,15 +21,10 @@ A simple and interactive web application to track progress using Streamlit, allo
    git clone https://github.com/SafoanMiah/web-tracker-app.git
    cd web-tracker-app
    ```
-
-2. **Install dependencies**:
+   
+2. **Run the app**:
    ```bash
-   pip install streamlit pandas plotly
-   ```
-
-3. **Run the app**:
-   ```bash
-   python3 -m streamlit run app.py
+   web-tracker.bat
    ```
 
 4. **Access the app**: Open your browser and go to `http://localhost:8501` (make sure to put in correct port).
