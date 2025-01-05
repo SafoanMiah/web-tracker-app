@@ -4,6 +4,8 @@ A simple and interactive web application to track progress using Streamlit, allo
 
 [Streamlit Web Example](https://web-tracker.streamlit.app/)
 
+![image](https://github.com/user-attachments/assets/e5f2b0be-9674-404c-b283-51c5c174ddac)
+
 ## 🚀 Features
 
 - Use the sidebar to add and manage entities (people, teams, etc.).
