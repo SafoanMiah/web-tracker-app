@@ -3,10 +3,6 @@ import os
 import glob
 import plotly.io as pio
 
-SNAPSHOT_DIR = 'historical'
-
-os.makedirs(SNAPSHOT_DIR, exist_ok=True)
-
 # Load data from a file if it exists, otherwise start fresh
 def load_data():
     if os.path.exists('progress_data.csv'):
