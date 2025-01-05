@@ -1,12 +1,12 @@
 # 📊 Web Tracker App
 
-A simple and interactive web application to track progress using Streamlit, allowing users to add names, metrics, and visualize the progress with a leaderboard and charts. Perfect for keeping track of individual or team achievements.
+A simple and interactive web application to track progress using Streamlit, allowing users to add names, and metrics, and visualize the progress with a leaderboard and charts. Perfect for keeping track of individual or team achievements.
 
 [Streamlit Web Example](https://web-tracker.streamlit.app/)
 
 ## 🚀 Features
 
-- Add and manage entities (people, teams, etc.) using the sidebar.
+- Use the sidebar to add and manage entities (people, teams, etc.).
 - Add new metrics (goals, tasks, etc.) for each entity.
 - Easily edit data directly within the app.
 - Automatically saves progress data to `progress_data.csv` for persistent storage.
@@ -23,18 +23,13 @@ A simple and interactive web application to track progress using Streamlit, allo
    git clone https://github.com/SafoanMiah/web-tracker-app.git
    cd web-tracker-app
    ```
-
-2. **Install dependencies**:
+   
+2. **Run the app**:
    ```bash
-   pip install streamlit pandas plotly
+   web-tracker.bat
    ```
 
-3. **Run the app**:
-   ```bash
-   python3 -m streamlit run app.py
-   ```
-
-4. **Access the app**: Open your browser and go to `http://localhost:8501` (make sure to put in correct port).
+4. **Access the app**: Open your browser and go to `http://localhost:8501` (make sure to put in the correct port).
 
 ## 📂 Project Structure
 
@@ -44,6 +39,7 @@ progress-tracker-app/
 ├── data_handler.py       # Contains data loading and saving functions
 ├── ui_components.py      # Contains functions for UI elements like sidebar and leaderboard
 ├── progress_data.csv     # Data file (auto-generated)
+├── web-tracker.bat       # Bat file to run the program locally
 └── README.md             # This readme file
 ```
 
