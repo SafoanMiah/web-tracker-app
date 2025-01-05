@@ -1,4 +1,3 @@
-
 # 📊 Web Tracker App
 
 A simple and interactive web application to track progress using Streamlit, allowing users to add names, metrics, and visualize the progress with a leaderboard and charts. Perfect for keeping track of individual or team achievements.
@@ -13,6 +12,9 @@ A simple and interactive web application to track progress using Streamlit, allo
 - Automatically saves progress data to `progress_data.csv` for persistent storage.
 - Displays a dynamic leaderboard to show progress.
 - Visualizes progress data using interactive Plotly charts.
+- **New:** Import data from CSV files and export current data.
+- **New:** Customize dashboard views to show or hide data frames and analytics.
+- **New:** Choose from multiple chart types: Bar, Pie, and Line charts.
 
 ## 🛠️ Installation
 
@@ -51,6 +53,8 @@ progress-tracker-app/
 2. **Edit Data**: Update progress directly in the editable table.
 3. **Leaderboard**: View the leaderboard sorted by total scores.
 4. **Visualize Data**: See the progress with a bar chart showing total scores.
+5. **Import/Export Data**: Easily import data from CSV files and export your current data.
+6. **Customize Dashboard**: Select which components of the dashboard to display, such as data frames and analytics.
 
 ## 🔧 Dependencies
 

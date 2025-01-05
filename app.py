@@ -1,25 +1,37 @@
 import streamlit as st
-import pandas as pd
-import plotly.express as px
-from data_handler import load_data, save_data
-from ui_components import sidebar_ui, display_data_frame, display_leaderboard
+from data_handler import load_data
+from ui_components import sidebar_ui, display_data_frame, display_chart, display_analytics, customize_dashboard
 
-# Initialize our data in session state
+# Load data into session state if not already loaded
 if 'df' not in st.session_state:
     st.session_state.df = load_data()
 
-# Page title and introduction
+# Set the title of the app
 st.title("📊 Progress Tracker")
 
-# Sidebar for data management
+# Display the sidebar for managing data
 sidebar_ui()
 
-# Main content area
+# Access the data frame from session state
 df = st.session_state.df
 
-# Show the data if there's something to display
+# Allow users to customize which parts of the dashboard to view
+show_data_frame, show_analytics = customize_dashboard()
+
+# Display the main content if there's data available
 if not df.empty:
-    display_data_frame(df)
-    display_leaderboard(df)
+    if show_data_frame:
+        display_data_frame(df)
+    
+    # Let users choose which type of chart to display
+    chart_type = st.selectbox(
+        "Select Chart Type",
+        ('Bar Chart', 'Pie Chart', 'Line Chart')
+    )
+    
+    display_chart(df, chart_type)
+
+    if show_analytics:
+        display_analytics(df)
 else:
     st.info("Looks like there's no data yet. Use the sidebar to add names and metrics to get started!")
